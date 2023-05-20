@@ -47,7 +47,7 @@ function game(){
         console.log(`ROUND ${round_no}....`);
         console.log("FIGHT!");
 
-        let playerSelection = prompt("Select your warrior (rock, paper or scissors)").toLowerCase();
+        // let playerSelection = prompt("Select your warrior (rock, paper or scissors)").toLowerCase();
         console.log(playRound(playerSelection, getComputerChoice()));
         console.log(`User: ${userPoints}`);
         console.log(`Computer: ${computerPoints}`);
