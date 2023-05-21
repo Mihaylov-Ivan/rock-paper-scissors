@@ -6,24 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="icon" href="data:," />
   </head>
   <body>
-    <div>ROCK - PAPER - SCISSORS</div>
-    <p>You : ... - ... : Computer</p>
-    <div>
+    <div id="title">ROCK - PAPER - SCISSORS</div>
+    <p id="round">ROUND 1</p>
+    <p id="score"></p>
+    <div id="weapons-store">
       <p>Choose your weapon:</p>
-      <div>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+      <div id="weapon-options">
+        <img id="Rock" class="weapon" src="../assets/img/Rock.jpg" alt="Rock" />
+        <img
+          id="Paper"
+          class="weapon"
+          src="../assets/img/Paper.jpg"
+          alt="Paper"
+        />
+        <img
+          id="Scissors"
+          class="weapon"
+          src="../assets/img/Scissors.jpg"
+          alt="Scissors"
+        />
       </div>
     </div>
-    <div>
-      <img src="" alt="" />
+    <div id="fight">
+      <button id="fight-btn">Fight!</button>
+      <img id="player-weapon" src="../assets/img/question_mark.jpg" alt="" />
       <p>VS</p>
-      <img src="" alt="" />
+      <img id="computer-weapon" src="../assets/img/question_mark.jpg" alt="" />
     </div>
-    <p></p>
+    <p id="round-outcome"></p>
+
+    <audio id="select-weapon-audio" src="../assets/audio/select.wav"></audio>
+    <audio id="fight-audio" src="../assets/audio/fight.wav"></audio>
   </body>
   <script src="../JS/index.js"></script>
 </html>
